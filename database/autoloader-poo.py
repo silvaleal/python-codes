@@ -63,7 +63,7 @@ class Loader:
                 totalValues = []
                 
                 seeders = self.seeders()
-                if not table in seeders: return
+                if not table in seeders: continue
                 
                 for fields in seeders[table]:
                     for field in fields:

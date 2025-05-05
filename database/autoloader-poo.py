@@ -7,6 +7,7 @@ class Loader:
     def __init__(self):
         self.connection = sqlite3.connect('database')
         self.cursor = self.connection.cursor()
+        self.run()
         
     def tables(self): # Querys que serão utilizadas ao preparar o banco de dados
         # Use apenas CREATE TABLE caso a tabela tenha seeders.
